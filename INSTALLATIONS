@@ -1,0 +1,66 @@
+Installation steps:
+
+Upload the project folder to your server using File Manager on CPanel (or any panel you are using). In our case it’s called “laravel-app”
+
+
+assets%2F MKm6BgO5BLRLjHQvr00%2F MMNVPHipHhI4YoUDvkG%2F MMNV TPgHCb0X88C7SK%2Fimage
+Now go inside the folder and change the permissions of the  application folders, storage and bootstrap/cache to 775 by right clicking on them and choosing “change permissions“
+
+assets%2F MKm6BgO5BLRLjHQvr00%2F MMNVPHipHhI4YoUDvkG%2F MMNVc 0qJEP6 E7kqow%2Fimage
+Then go to sub-domains and create a new sub-domain. The document root should points to the public folder of the project. In our case it’s /home/democom/laravel-app/public.
+
+
+assets%2F MKm6BgO5BLRLjHQvr00%2F MMTJxE3aFP2HPVpswX %2F MMTK98LusbZgHvtl2sW%2Fimage
+The sub-domain will be as the following:
+http://laravel-app.example.com
+
+
+Now to go phpMyAdmin or the  database manager you have and create a new database called
+laravel-app
+
+assets%2F MKm6BgO5BLRLjHQvr00%2F MMTJxE3aFP2HPVpswX %2F
+The installation wizard allows you to configure the system without having to edit the configuration file or execute any command from the terminal.
+
+To access the installation wizard, simply access the application through the browser.
+
+
+assets%2F MKm6BgO5BLRLjHQvr00%2F MMTJxE3aFP2HPVpswX %2F MMTKWB5ddUK qnT9K5X%2Fimage
+The server is verified to meet the system requirements.
+
+
+assets%2F MKm6BgO5BLRLjHQvr00%2F MMTJxE3aFP2HPVpswX %2F MMTKY8Rlb RVSZ4ga3l%2Fimage
+It is also verified that the folders have read and write access.
+
+
+assets%2F MKm6BgO5BLRLjHQvr00%2F MMTJxE3aFP2HPVpswX %2F MMTK 0
+The access data to the database will be requested to verify the connection and perform the migration of the tables.
+
+
+assets%2F MKm6BgO5BLRLjHQvr00%2F MMTJxE3aFP2HPVpswX %2F MMTKbQlLzYIjWBM2qb8%2Fimage
+The application has been installed correctly, you can access it with the default user data.
+
+
+assets%2F MKm6BgO5BLRLjHQvr00%2F MMTJxE3aFP2HPVpswX %2F MMTKdSreslowTIu1cGr%2Fimage
+The installation wizard is disabled and is no longer accessible after installation is complete. The software is ready to use.
+
+
+assets%2F MKm6BgO5BLRLjHQvr00%2F MMTJxE3aFP2HPVpswX %2F MMTKR o2vu81jz30LIk%2Fimage
+Screenshots
+complete helpdesk ticketing system
+complete helpdesk ticketing system
+
+
+complete helpdesk ticketing system using php
+complete helpdesk ticketing system using php
+
+DEMO ACCESS ADMIN
+Email: admin@admin.com
+Password: 12345678
+
+
+DEMO ACCESS AGENT
+Email: agent@agent.com
+Password: 12345678
+DEMO ACCESS CUSTOMER
+Email: customer@customer.com
+Password: 12345678
