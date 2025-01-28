@@ -87,3 +87,79 @@ Categories: Categories are used to classify tickets based on the type of issue t
 Departments: The Departments entity specifies the various departments within the organization, such as “Technical Support” or “Customer Service.” It includes attributes like department_id and department_name. Similar to Categories, the relationship between Departments and Tickets is one-to-many, indicating that each department can manage several tickets. This setup ensures that tickets are routed correctly to the appropriate support team.
 Comments: Comments capture all communication logs and internal notes related to a ticket. This entity contains attributes such as comment_id, ticket_id (foreign key referencing Tickets), user_id (foreign key referencing Users), comment_text, and commented_at. This structure establishes a one-to-many relationship between Tickets and Comments, where each ticket can have multiple comments posted by different users. It also forms a one-to-many relationship between Users and Comments, indicating that a single user can post multiple comments on various tickets.
 Notifications: Notifications serve the purpose of sending alerts and updates to users about ticket status changes or new comments. The Notifications entity includes attributes like notification_id, user_id (foreign key referencing Users), ticket_id (foreign key referencing Tickets), notification_message, notified_at, and is_read. The relationship between Users and Notifications is one-to-many, as each user can receive multiple notifications. Likewise, each ticket can trigger multiple notifications, establishing a one-to-many relationship between Tickets and Notifications.
+Installation steps:
+
+Upload the project folder to your server using File Manager on CPanel (or any panel you are using). In our case it’s called “laravel-app”
+
+
+
+Now go inside the folder and change the permissions of the  application folders, storage and bootstrap/cache to 775 by right clicking on them and choosing “change permissions“
+
+
+Then go to sub-domains and create a new sub-domain. The document root should points to the public folder of the project. In our case it’s /home/democom/laravel-app/public.
+
+
+![image](https://github.com/user-attachments/assets/0214aa50-3f48-4c52-a1c1-7616893ff26d)
+
+The sub-domain will be as the following:
+http://laravel-app.example.com
+
+
+Now to go phpMyAdmin or the  database manager you have and create a new database called
+laravel-app
+
+![image](https://github.com/user-attachments/assets/a97ca767-b178-44b0-8ea8-cd028d94a4bd)
+
+The installation wizard allows you to configure the system without having to edit the configuration file or execute any command from the terminal.
+
+To access the installation wizard, simply access the application through the browser.
+
+![image](https://github.com/user-attachments/assets/b4aa6eb8-d9cc-42e7-a930-fb8f43d24a80)
+
+The server is verified to meet the system requirements.
+
+
+![image](https://github.com/user-attachments/assets/15c93734-23f9-49f0-bd99-6e2a6b588cb3)
+
+It is also verified that the folders have read and write access.
+
+
+![image](https://github.com/user-attachments/assets/29d1d953-6841-494d-ad3a-6368ee3e0e1b)
+
+The access data to the database will be requested to verify the connection and perform the migration of the tables.
+
+
+![image](https://github.com/user-attachments/assets/f7cbc248-1339-47e0-a3d7-e0d8aad038ae)
+
+The application has been installed correctly, you can access it with the default user data.
+
+![image](https://github.com/user-attachments/assets/e459d624-e296-43f7-9e0a-8d59001b6c1b)
+
+The installation wizard is disabled and is no longer accessible after installation is complete. The software is ready to use.
+
+
+![image](https://github.com/user-attachments/assets/709f80e0-84d7-465e-a8e6-28fb11b4e18c)
+
+Screenshots
+![image](https://github.com/user-attachments/assets/db4dd996-eed5-4e94-b69c-53577659a18a)
+
+complete helpdesk ticketing system
+complete helpdesk ticketing system
+
+![image](https://github.com/user-attachments/assets/ae1b05e4-b65f-43a4-800a-590e489179de)
+
+complete helpdesk ticketing system using php
+complete helpdesk ticketing system using php
+
+DEMO ACCESS ADMIN
+Email: admin@admin.com
+Password: 12345678
+
+
+DEMO ACCESS AGENT
+Email: agent@agent.com
+Password: 12345678
+DEMO ACCESS CUSTOMER
+Email: customer@customer.com
+Password: 12345678
+
